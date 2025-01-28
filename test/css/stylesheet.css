@@ -12,16 +12,39 @@ article {
   grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 0;
-  background-color: white;
   padding-left: 50px;
   padding-top: 50px;
   padding-bottom: 30px;
 }
 
-article img {
+img {
   max-width: 90%;
 }
 
 body {
   background-color: rgb(244, 246, 250);
+}
+
+/* .grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1500px;
+} */
+
+.grid_1-1,
+article {
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px;
 }
